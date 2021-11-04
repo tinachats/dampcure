@@ -1,8 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    font-size: 100%;
+}
+
+:root {
+    --thm-font-2: 'Montserrat', sans-serif;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 html {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #545454;
+}
+
+a {
+    text-decoration: none;
 }
 
 .social-apps>li>a {
@@ -14,11 +31,91 @@ html {
     color: #fff;
 }
 
-.dropdown:focus .dropdown>.dropdown-menu,
-.dropdown:hover .dropdown>.dropdown-menu {
-    display: block;
+.main-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-menu>li {
+    position: inherit;
+    display: inline-block;
 }
 
 .dropdown-menu {
-    border-radius: 1rem;
+    position: absolute;
+    top: 100%;
+    left: inherit;
+    width: 250px;
+    padding: 0px 0;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    -moz-transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    transform: translateY(30px);
+    transition: all 100ms ease;
+    z-index: 100;
+}
+
+.main-menu>li>a {
+    position: relative;
+    display: block;
+    padding: 10px;
+    color: #172746;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all 500ms ease;
+    font-family: var(--thm-font-2);
+    opacity: 1;
+    z-index: 1;
+}
+
+.montserrat {
+    color: #172746;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all 500ms ease;
+    font-family: var(--thm-font-2);
+    opacity: 1;
+    z-index: 1;
+}
+
+.main-menu>li:active .dropdown-menu,
+.main-menu>li:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-btn {
+    position: relative;
+    float: left;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.nav-btn .bar {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #252628;
+    top: 0px;
+    right: 0px;
+    margin-top: 5px;
+    transition: all 500ms ease;
+}
+
+.nav-btn:hover .bar {
+    width: 30px;
+    background: var(--bs-warning);
+}
+
+.nav-btn .bar:last-child {
+    top: 18px;
 }
