@@ -17,10 +17,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
     <!-- Owl Carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
-        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- Animate.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- App CSS -->
     <link rel="stylesheet" href="assets/css/dampcure.css">
 </head>
@@ -83,8 +85,8 @@
     <!-- /.Top Section -->
 
     <!-- Navbar Section -->
-    <nav class="container position-sticky bg-white">
-        <ul class="main-menu list-inline text-center py-2">
+    <nav class="sticky-top bg-white">
+        <ul class="container main-menu list-inline text-center mb-2 pt-2">
             <li class="list-inline-item">
                 <a href="#">
                     Home
@@ -186,18 +188,231 @@
     <!-- /.Navbar Section -->
 
     <!-- Hero Slider -->
-    <div class="owl-carousel owl-theme" id="main-carousel">
+    <div class="owl-carousel owl-theme owl-loaded owl-drag" id="main-carousel">
         <div class="item">
-            <img src="assets/images/slider-1.jpg" alt="Hero Image">
+            <!-- Slider Content -->
+            <div class="slider-content text-wrap">
+                <h6 class="upper-title text-start text-uppercase fw-bold animate__animated animate__slideInDown">
+                    10 years experience
+                </h6>
+                <h1 class="text-wrap fw-bold text-capitalize display-5 animate__animated animate__slideInDown">
+                    looking for smart roofing & fixing consulting?
+                </h1>
+                <p class="text-wrap animate__animated animate__slideInDown fs-5">
+                    We are professionals in the roofing and fixing business maintain the highest standards of business integrity.
+                </p>
+                <div class="d-flex align-items-center animate__animated animate__slideInUp mt-2">
+                    <a href="#" role="button" class="btn btn-lg btn-danger rounded-pill fw-bold fs-6 px-4 py-2">
+                        Our Services
+                    </a>
+                    <a href="#" role="button" class="btn btn-lg btn-light rounded-pill fw-bold fs-6 px-4 py-2 ms-3">
+                        About More
+                    </a>
+                </div>
+            </div>
+            <!-- /.Slider Content -->
+            <img src="assets/images/slider-1.jpg" class="hero-image" alt="Hero Image">
         </div>
         <div class="item">
-            <img src="assets/images/slider-2.jpg" alt="Hero Image">
+            <!-- Slider Content -->
+            <div class="slider-content text-wrap">
+                <h6 class="upper-title text-start text-uppercase fw-bold animate__animated animate__slideInDown">
+                    Best Services Since 1996
+                </h6>
+                <h1 class="text-wrap fw-bold text-capitalize display-5 animate__animated animate__slideInDown">
+                    Get Us Call Now! 24/7 Customer Support
+                </h1>
+                <p class="text-wrap animate__animated animate__slideInDown fs-5">
+                    We provide a variety of Roofing and maintenance services for <br>all type of House makes Happy.
+                </p>
+                <div class="d-flex align-items-center animate__animated animate__slideInUp mt-2">
+                    <a href="#" role="button" class="btn btn-lg btn-danger rounded-pill fw-bold fs-6 px-4 py-2">
+                        Our Services
+                    </a>
+                    <a href="#" role="button" class="btn btn-lg btn-light rounded-pill fw-bold fs-6 px-4 py-2 ms-3">
+                        About More
+                    </a>
+                </div>
+            </div>
+            <!-- /.Slider Content -->
+            <img src="assets/images/slider-2.jpg" class="hero-image" alt="Hero Image">
         </div>
         <div class="item">
-            <img src="assets/images/slider-3.jpg" alt="Hero Image">
+            <!-- Slider Content -->
+            <div class="slider-content text-wrap">
+                <h6 class="upper-title text-start text-uppercase fw-bold animate__animated animate__slideInDown">
+                    Community Services
+                </h6>
+                <h1 class="text-wrap fw-bold text-capitalize display-5 animate__animated animate__slideInDown">
+                    Commercial Roofing &amp;Fixing Consulting
+                </h1>
+                <p class="text-wrap animate__animated animate__slideInDown fs-5">
+                    Download Our app and get our services<br> We are connected and provide Services
+                </p>
+                <div class="d-flex align-items-center animate__animated animate__slideInUp mt-2">
+                    <a href="#" role="button" class="btn btn-lg btn-danger rounded-pill fw-bold fs-6 px-4 py-2">
+                        Our Services
+                    </a>
+                    <a href="#" role="button" class="btn btn-lg btn-light rounded-pill fw-bold fs-6 px-4 py-2 ms-3">
+                        About More
+                    </a>
+                </div>
+            </div>
+            <!-- /.Slider Content -->
+            <img src="assets/images/slider-3.jpg" class="hero-image" alt="Hero Image">
         </div>
     </div>
     <!-- /.Hero Slider -->
+
+    <!-- Services -->
+    <div class="d-flex align-items-center justify-content-center mt-3">
+        <div class="feature-block position-relative">
+            <div class="house-roof position-absolute"></div>
+            <div class="inner-box text-center">
+                <div class="icon-box text-center">
+                    <i class="bi bi-hammer fs-3"></i>
+                </div>
+                <h4 class="fw-bold fs-6 montserrat">
+                    <a href="#" class="feature-title">Quality Materials</a>
+                </h4>
+                <small class="feature-text fw-light fs-6">
+                    We have all the Quality Roofing Products needed
+                </small>
+            </div>
+        </div>
+        <div class="feature-block position-relative mx-5">
+            <div class="house-roof position-absolute"></div>
+            <div class="inner-box text-center">
+                <div class="icon-box text-center">
+                    <i class="bi bi-hammer fs-3"></i>
+                </div>
+                <h4 class="fw-bold fs-6 montserrat">
+                    <a href="#" class="feature-title">Expert Engineer</a>
+                </h4>
+                <small class="feature-text fw-light fs-6">
+                    Our Roofing Team Members are Well Educated and Professional
+                </small>
+            </div>
+        </div>
+        <div class="feature-block position-relative">
+            <div class="house-roof position-absolute"></div>
+            <div class="inner-box text-center">
+                <div class="icon-box text-center">
+                    <i class="bi bi-hammer fs-3"></i>
+                </div>
+                <h4 class="fw-bold fs-6 montserrat">
+                    <a href="#" class="feature-title">Quality Maintenance</a>
+                </h4>
+                <small class="feature-text fw-light fs-6">
+                    Ensure the Quality of work is our main goal to follow.
+                </small>
+            </div>
+        </div>
+    </div>
+    <!-- /.Services -->
+
+    <!-- About Us -->
+    <div class="elementor-widget-container">
+        <section class="about-home-four one">
+            <div class="pattern-layer">
+                <div class="pattern-1 wow slideInLeft animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="animation-name: slideInLeft;">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row align-items-md-start clearfix">
+                    <div class="col-12 col-md-6">
+                        <div class="image-box">
+                            <div class="image-shape-1 rotate-me" style="background-image: url(assets/images/shape-3.png);">
+                            </div>
+                            <div class="image-shape-2 rotate-me" style="background-image: url(assets/images/shape-4.png);">
+                            </div>
+
+                            <figure class="image image-1 paroller" style="transform: translateY(-20px); transition: transform 0.6s cubic-bezier(0, 0, 0, 1) 0s; will-change: transform;">
+                                <img src="assets/images/about-1.jpg" alt="">
+                            </figure>
+
+                            <figure class="image image-2 paroller-2" style="transform: translateX(3px); transition: transform 0s linear 0s; will-change: transform;">
+                                <img src="assets/images/project-4.jpg" height="270" width="200" class="rounded-2" alt="">
+                            </figure>
+
+                            <figure class="image image-3">
+                                <img src="assets/images/about-3.jpg" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h6 class="text-uppercase montserrat text-danger">About dampcure</h6>
+                        <h1 class="display-5 fw-bold">
+                            Roof Improvement for More Than 30 Years
+                        </h1>
+                        <small class="text-muted montserrat fs-6 fw-light">
+                            We are professionals in the Roofing and Fixing business, this is why we always stay up to date on the latest technologies and equipment. Furthermore, we maintain the highest standards of business integrity on Global Basis by following environmental safety rules. We are passionate about our Works!
+                        </small>
+                        <div class="row align-items-start my-3">
+                            <div class="col-2 d-flex justify-content-end">
+                                <div class="icon-rounded-circle d-grid">
+                                    <i class="bi bi-check2 text-danger fs-2 m-auto"></i>
+                                </div>
+                            </div>
+
+                            <div class="col-10">
+                                <h6 class="montserrat fs-5 fw-bolder mb-0">
+                                    Mission Statement
+                                </h6>
+                                <p class="fs-6 text-muted pt-0">
+                                    The Mission is to serve our customers and always deliver the highest level of professionalism Which makes our Customer Happy.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row align-items-start">
+                            <div class="col-2 d-flex justify-content-end">
+                                <div class="icon-rounded-circle d-grid" style="background-color:#fbf4d8;;">
+                                    <i class="bi bi-check2 fs-2 m-auto" style="color:#e7bd1a;"></i>
+                                </div>
+                            </div>
+
+                            <div class="col-10">
+                                <h6 class="montserrat fs-5 fw-bolder mb-0">
+                                    What is Our Core Values
+                                </h6>
+                                <p class="fs-6 text-muted pt-0">
+                                    We believe in Teamwork through Trust and Respect Each Other. Enthusiastic Communication with Clients.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-md-center justify-content-md-center my-3">
+                            <div class="col-12 col-md-5">
+                                <div class="single-counting-box border border-danger rounded-2 p-3">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <h6 class="fs-2 text-gold fw-bold my-0">
+                                            39+
+                                        </h6>
+                                        <h6 class="title ms-3 my-0">
+                                            Experience<br>Members
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <div class="single-counting-box border border-danger rounded-2 p-3">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <h6 class="fs-2 text-gold fw-bold my-0">
+                                            4k+
+                                        </h6>
+                                        <h6 class="title ms-3 my-0">
+                                            Satisfied<br>Clients
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- /.About Us -->
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -205,6 +420,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Dampcure JS -->
     <script src="assets/js/dampcure.js"></script>
 </body>
