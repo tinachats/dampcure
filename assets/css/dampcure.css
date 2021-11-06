@@ -399,24 +399,22 @@ li {
     background-repeat: no-repeat;
 }
 
-.bg-pattern {
+#our-services .pattern-layer .pattern-1 {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-repeat: none;
-    width: auto;
-    height: auto;
-    z-index: 100;
+    left: 0px;
+    bottom: 285px;
+    width: 223px;
+    height: 369px;
+    background-repeat: no-repeat;
 }
 
-.bg-pattern.diag-1 {
-    background: url('../images/shape-8.png') center center/cover;
-    left: 5%;
-}
-
-.bg-pattern.diag-2 {
-    background: url('../images/shape-9.png');
-    right: 0;
+#our-services .pattern-layer .pattern-2 {
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+    width: 615px;
+    height: 775px;
+    background-repeat: no-repeat;
 }
 
 
