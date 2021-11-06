@@ -27,7 +27,11 @@
     <link rel="stylesheet" href="assets/css/dampcure.css">
 </head>
 
-<body>
+<body class="position-relative">
+    <!-- Logo Box -->
+    <div class="logo-box"></div>
+    <!-- /.Logo Box -->
+
     <!-- Top Section -->
     <nav class="bg-dark text-light w-100 py-2">
         <div class="container text-center">
@@ -90,104 +94,111 @@
 
     <!-- Navbar Section -->
     <nav class="sticky-top bg-white">
-        <ul class="container main-menu list-inline text-center mb-2 pt-2">
-            <li class="list-inline-item">
-                <a href="#">
-                    Home
-                </a>
-            </li>
-            <li class="list-inline-item dropdown">
-                <a href="#" role="button" id="company-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    Company 
-                    <svg xmlns='http://www.w3.org/2000/svg' width="15" height="12" viewBox='0 0 16 16'>
-                        <path fill='none' stroke='#343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/>
-                    </svg>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="company-dropdown">
-                    <li><a class="dropdown-item montserrat" href="#">About Us</a></li>
-                    <li><a class="dropdown-item montserrat" href="#">Our Team</a></li>
-                    <li><a class="dropdown-item montserrat" href="#">Team Details</a></li>
-                    <li><a class="dropdown-item montserrat" href="#">Testimonials</a></li>
-                </ul>
-            </li>
-            <li class="list-inline-item dropdown">
-                <a href="#" role="button" id="services-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    Services 
-                    <svg xmlns='http://www.w3.org/2000/svg' width="15" height="12" viewBox='0 0 16 16'>
-                        <path fill='none' stroke='#343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/>
-                    </svg>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="services-dropdown">
-                    <li><a class="dropdown-item montserrat" href="#">All Our Services</a></li>
-                    <li><a class="dropdown-item montserrat" href="#">Project Planning</a></li>
-                    <li><a class="dropdown-item montserrat" href="#">Site Mining</a></li>
-                    <li><a class="dropdown-item montserrat" href="#">Construction Works</a></li>
-                    <li><a class="dropdown-item montserrat" href="#">Renovations</a></li>
-                    <li><a class="dropdown-item montserrat" href="#">Floor Roofs</a></li>
-                    <li><a class="dropdown-item montserrat" href="#">Market Research</a></li>
-                </ul>
-            </li>
-            <li class="list-inline-item dropdown">
-                <a href="#" role="button" id="projects-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    Project 
-                    <svg xmlns='http://www.w3.org/2000/svg' width="15" height="12" viewBox='0 0 16 16'>
-                        <path fill='none' stroke='#343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/>
-                    </svg>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="projects-dropdown">
-                    <li><a class="dropdown-item montserrat" href="#">Our Projects</a></li>
-                    <li><a class="dropdown-item montserrat" href="#">Quality Materials</a></li>
-                    <li><a class="dropdown-item montserrat" href="#">Modern Pattern Style</a></li>
-                    <li><a class="dropdown-item montserrat" href="#">Low Rise Building</a></li>
-                    <li><a class="dropdown-item montserrat" href="#">Winter Maintenance</a></li>
-                    <li><a class="dropdown-item montserrat" href="#">Fixing Storm Damage</a></li>
-                    <li><a class="dropdown-item montserrat" href="#">Roof Installation</a></li>
-                </ul>
-            </li>
-            <li class="list-inline-item dropdown">
-                <a href="#" role="button" id="company-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    Shop 
-                    <svg xmlns='http://www.w3.org/2000/svg' width="15" height="12" viewBox='0 0 16 16'>
-                        <path fill='none' stroke='#343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/>
-                    </svg>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="company-dropdown">
-                    <li><a class="dropdown-item montserrat" href="#">Shop</a></li>
-                    <li><a class="dropdown-item montserrat" href="#">Cart</a></li>
-                </ul>
-            </li>
-            <li class="list-inline-item">
-                <a href="#">
-                    Blog
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a href="#">
-                    Contact
-                </a>
-            </li>
-            <li class="list-inline-item border-end pe-3">
-                <a href="#">
-                    <i class="bi bi-search"></i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a href="#">
-                    <i class="bi bi-bag"></i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a href="#">
-                    <div class="nav-btn nav-toggler navSidebar-button clearfix">
-                        <div class="bar-box">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
+        <div class="container mb-2 pt-2">
+            <ul class="main-menu list-inline text-center">
+                <li class="list-inline-item">
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="list-inline-item dropdown">
+                    <a href="#" role="button" id="company-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Company 
+                        <svg xmlns='http://www.w3.org/2000/svg' width="15" height="12" viewBox='0 0 16 16'>
+                            <path fill='none' stroke='#343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="company-dropdown">
+                        <li><a class="dropdown-item montserrat" href="#">About Us</a></li>
+                        <li><a class="dropdown-item montserrat" href="#">Our Team</a></li>
+                        <li><a class="dropdown-item montserrat" href="#">Team Details</a></li>
+                        <li><a class="dropdown-item montserrat" href="#">Testimonials</a></li>
+                    </ul>
+                </li>
+                <li class="list-inline-item dropdown">
+                    <a href="#" role="button" id="services-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services 
+                        <svg xmlns='http://www.w3.org/2000/svg' width="15" height="12" viewBox='0 0 16 16'>
+                            <path fill='none' stroke='#343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="services-dropdown">
+                        <li><a class="dropdown-item montserrat" href="#">All Our Services</a></li>
+                        <li><a class="dropdown-item montserrat" href="#">Project Planning</a></li>
+                        <li><a class="dropdown-item montserrat" href="#">Site Mining</a></li>
+                        <li><a class="dropdown-item montserrat" href="#">Construction Works</a></li>
+                        <li><a class="dropdown-item montserrat" href="#">Renovations</a></li>
+                        <li><a class="dropdown-item montserrat" href="#">Floor Roofs</a></li>
+                        <li><a class="dropdown-item montserrat" href="#">Market Research</a></li>
+                    </ul>
+                </li>
+                <li class="list-inline-item dropdown">
+                    <a href="#" role="button" id="projects-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Project 
+                        <svg xmlns='http://www.w3.org/2000/svg' width="15" height="12" viewBox='0 0 16 16'>
+                            <path fill='none' stroke='#343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="projects-dropdown">
+                        <li><a class="dropdown-item montserrat" href="#">Our Projects</a></li>
+                        <li><a class="dropdown-item montserrat" href="#">Quality Materials</a></li>
+                        <li><a class="dropdown-item montserrat" href="#">Modern Pattern Style</a></li>
+                        <li><a class="dropdown-item montserrat" href="#">Low Rise Building</a></li>
+                        <li><a class="dropdown-item montserrat" href="#">Winter Maintenance</a></li>
+                        <li><a class="dropdown-item montserrat" href="#">Fixing Storm Damage</a></li>
+                        <li><a class="dropdown-item montserrat" href="#">Roof Installation</a></li>
+                    </ul>
+                </li>
+                <li class="list-inline-item dropdown">
+                    <a href="#" role="button" id="company-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop 
+                        <svg xmlns='http://www.w3.org/2000/svg' width="15" height="12" viewBox='0 0 16 16'>
+                            <path fill='none' stroke='#343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="company-dropdown">
+                        <li><a class="dropdown-item montserrat" href="#">Shop</a></li>
+                        <li><a class="dropdown-item montserrat" href="#">Cart</a></li>
+                    </ul>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        Blog
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        Contact
+                    </a>
+                </li>
+                <li class="list-inline-item border-end pe-3">
+                    <a href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <i class="bi bi-bag"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <div class="nav-btn nav-toggler navSidebar-button clearfix">
+                            <div class="bar-box">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </li>
-        </ul>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#contact-us" role="button" class="btn btn-danger btn-sm rounded-pill text-light px-3 py-1">
+                        <span class="fs-6">Contact Us</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- /.Navbar Section -->
 
@@ -269,57 +280,63 @@
     <!-- /.Hero Slider -->
 
     <!-- Services -->
-    <div class="d-flex align-items-center justify-content-center mt-3">
-        <div class="feature-block position-relative">
-            <div class="house-roof position-absolute"></div>
-            <div class="inner-box text-center">
-                <div class="icon-box text-center">
-                    <i class="bi bi-hammer fs-3"></i>
+    <div class="container mt-3">
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="feature-block position-relative">
+                <div class="house-roof position-absolute"></div>
+                <div class="inner-box text-center">
+                    <div class="icon-box text-center">
+                        <i class="bi bi-hammer fs-3"></i>
+                    </div>
+                    <h4 class="fw-bold fs-6 montserrat">
+                        <a href="#" class="feature-title">Quality Materials</a>
+                    </h4>
+                    <small class="feature-text fw-light fs-6">
+                        We have all the Quality Roofing Products needed
+                    </small>
                 </div>
-                <h4 class="fw-bold fs-6 montserrat">
-                    <a href="#" class="feature-title">Quality Materials</a>
-                </h4>
-                <small class="feature-text fw-light fs-6">
-                    We have all the Quality Roofing Products needed
-                </small>
             </div>
-        </div>
-        <div class="feature-block position-relative mx-5">
-            <div class="house-roof position-absolute"></div>
-            <div class="inner-box text-center">
-                <div class="icon-box text-center">
-                    <i class="bi bi-hammer fs-3"></i>
+            <div class="feature-block position-relative mx-5">
+                <div class="house-roof position-absolute"></div>
+                <div class="inner-box text-center">
+                    <div class="icon-box text-center">
+                        <i class="bi bi-hammer fs-3"></i>
+                    </div>
+                    <h4 class="fw-bold fs-6 montserrat">
+                        <a href="#" class="feature-title">Expert Engineer</a>
+                    </h4>
+                    <small class="feature-text fw-light fs-6">
+                        Our Roofing Team Members are Well Educated and Professional
+                    </small>
                 </div>
-                <h4 class="fw-bold fs-6 montserrat">
-                    <a href="#" class="feature-title">Expert Engineer</a>
-                </h4>
-                <small class="feature-text fw-light fs-6">
-                    Our Roofing Team Members are Well Educated and Professional
-                </small>
             </div>
-        </div>
-        <div class="feature-block position-relative">
-            <div class="house-roof position-absolute"></div>
-            <div class="inner-box text-center">
-                <div class="icon-box text-center">
-                    <i class="bi bi-hammer fs-3"></i>
+            <div class="feature-block position-relative">
+                <div class="house-roof position-absolute"></div>
+                <div class="inner-box text-center">
+                    <div class="icon-box text-center">
+                        <i class="bi bi-hammer fs-3"></i>
+                    </div>
+                    <h4 class="fw-bold fs-6 montserrat">
+                        <a href="#" class="feature-title">Quality Maintenance</a>
+                    </h4>
+                    <small class="feature-text fw-light fs-6">
+                        Ensure the Quality of work is our main goal to follow.
+                    </small>
                 </div>
-                <h4 class="fw-bold fs-6 montserrat">
-                    <a href="#" class="feature-title">Quality Maintenance</a>
-                </h4>
-                <small class="feature-text fw-light fs-6">
-                    Ensure the Quality of work is our main goal to follow.
-                </small>
             </div>
         </div>
     </div>
     <!-- /.Services -->
 
     <!-- About Us -->
-    <div class="elementor-widget-container">
+    <div class="container">
         <section class="about-home-four one">
             <div class="pattern-layer">
                 <div class="pattern-1 wow slideInLeft animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="animation-name: slideInLeft;">
+                </div>
+            </div>
+            <div class="pattern-layer">
+                <div class="pattern-2 wow slideInRight animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="animation-name: slideInRight;">
                 </div>
             </div>
             <div class="container">
@@ -332,24 +349,24 @@
                             </div>
 
                             <figure class="image image-1 paroller" style="transform: translateY(-20px); transition: transform 0.6s cubic-bezier(0, 0, 0, 1) 0s; will-change: transform;">
-                                <img src="assets/images/about-1.jpg" alt="">
+                                <img src="assets/images/about-1.jpg" width="295" height="393" alt="Roof construction">
                             </figure>
 
                             <figure class="image image-2 paroller-2" style="transform: translateX(3px); transition: transform 0s linear 0s; will-change: transform;">
-                                <img src="assets/images/project-4.jpg" height="270" width="200" class="rounded-2" alt="">
+                                <img src="assets/images/about-3.jpg" width="200" height="270" alt="">
                             </figure>
 
                             <figure class="image image-3">
-                                <img src="assets/images/about-3.jpg" alt="">
+                                <img src="assets/images/project-4.jpg" width="250" height="300" class="rounded-2" alt="">
                             </figure>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <h6 class="text-uppercase montserrat text-danger">About dampcure</h6>
-                        <h1 class="display-5 fw-bold">
+                        <p class="sub-title text-danger">About dampcure</p>
+                        <h1 class="sec-title">
                             Roof Improvement for More Than 30 Years
                         </h1>
-                        <small class="text-muted montserrat fs-6 fw-light">
+                        <small class="column-text text-muted montserrat">
                             We are professionals in the Roofing and Fixing business, this is why we always stay up to date on the latest technologies and equipment. Furthermore, we maintain the highest standards of business integrity on Global Basis by following environmental safety rules. We are passionate about our Works!
                         </small>
                         <div class="row align-items-start my-3">
@@ -360,12 +377,12 @@
                             </div>
 
                             <div class="col-10">
-                                <h6 class="montserrat fs-5 fw-bolder mb-0">
+                                <h4 class="bullet-heading">
                                     Mission Statement
-                                </h6>
-                                <p class="fs-6 text-muted pt-0">
+                                </h4>
+                                <small class="column-text text-muted montserrat">
                                     The Mission is to serve our customers and always deliver the highest level of professionalism Which makes our Customer Happy.
-                                </p>
+                                </small>
                             </div>
                         </div>
                         <div class="row align-items-start">
@@ -376,16 +393,16 @@
                             </div>
 
                             <div class="col-10">
-                                <h6 class="montserrat fs-5 fw-bolder mb-0">
+                                <h4 class="bullet-heading">
                                     What is Our Core Values
-                                </h6>
-                                <p class="fs-6 text-muted pt-0">
+                                </h4>
+                                <small class="column-text text-muted montserrat">
                                     We believe in Teamwork through Trust and Respect Each Other. Enthusiastic Communication with Clients.
-                                </p>
+                                </small>
                             </div>
                         </div>
 
-                        <div class="row align-items-md-center justify-content-md-center my-3">
+                        <div class="row align-items-md-center justify-content-md-center my-4">
                             <div class="col-12 col-md-5">
                                 <div class="single-counting-box border border-danger rounded-2 p-3">
                                     <div class="d-flex align-items-center justify-content-center">
@@ -417,6 +434,257 @@
         </section>
     </div>
     <!-- /.About Us -->
+
+    <!-- Our Services -->
+    <section class="dark-black position-relative text-light py-5" id="our-services">
+        <div class="container pt-5 pb-2">
+            <div class="d-block text-center">
+                <p class="sub-title text-danger">quality services</p>
+                <h2 class="sec-title text-light">We’re Providing Quality <br>Roofing Services</h2>
+            </div>
+        </div>
+
+        <ul class="container nav nav-pills nav-fill my-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-layer-tab" data-bs-toggle="pill" data-bs-target="#pills-layer" type="button" role="tab" aria-controls="pills-layer" aria-selected="true">
+                    <h4 class="my-0">Roof Layer</h4>
+                </button>
+            </li>
+            <li class="nav-item ms-5" role="presentation">
+                <button class="nav-link" id="pills-tune-up-tab" data-bs-toggle="pill" data-bs-target="#pills-tune-up" type="button" role="tab" aria-controls="pills-tune-up" aria-selected="false">
+                    <h4 class="my-0">Roof Tune-up</h4>
+                </button>
+            </li>
+            <li class="nav-item ms-md-5" role="presentation">
+                <button class="nav-link" id="pills-repair-tab" data-bs-toggle="pill" data-bs-target="#pills-repair" type="button" role="tab" aria-controls="pills-repair" aria-selected="false">
+                    <h4 class="my-0">Roof Repair</h4>
+                </button>
+            </li>
+            <li class="nav-item ms-5" role="presentation">
+                <button class="nav-link" id="pills-replacement-tab" data-bs-toggle="pill" data-bs-target="#pills-replacement" type="button" role="tab" aria-controls="pills-replacement" aria-selected="false">
+                    <h4 class="my-0">Roof Replacement</h4>
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content pb-5 pt-3 mt-2" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-layer" role="tabpanel" aria-labelledby="pills-layer-tab">
+                <div class="container">
+                    <div class="row align-items-md-start justify-content-md-between">
+                        <div class="col-12 col-md-6 position-relative">
+                            <figure class="d-flex justify-content-start">
+                                <img src="assets/images/dia.jpg" width="450" height="250" class="rounded-2" alt="Roof Layers">
+                            </figure>
+                            <figure class="position-absolute img-layer-2">
+                                <img src="assets/images/roofimd.png" width="450" height="250" class="rounded-2" alt="Roof Drawing">
+                            </figure>
+                            <div class="image-shape-1 rotate-me" style="background-image: url(assets/images/shape-7.png);">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="content-box">
+                                <h3>Roof Layer</h3>
+                                <p class="montserrat text-light text-justify lh-sm fw-normal fs-6">When most people think of a roof, they only think of the shingles. A roofing system, on the other hand, is far more complicated. Roofs may appear to be simple, but they are actually quite difficult. There are numerous layers
+                                    of materials to install, and they must be done in the correct order. </p>
+                                <p class="montserrat text-light lh-sm fw-normal fs-6">Each component of the system works together to keep your home safe from the elements. It's critical to understand how each layer of your roof protects your property.</p>
+                                <h4 class="montserrat text-light">Here are the layers of a Roof</h4>
+                                <ul class="menu-list clearfix p-0">
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Framing
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Insulation
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Ventilation
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Roof deck
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Water Barrier
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Underlayment
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Shingles
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Starter Strip
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Ridge Cap
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Flashing
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-tune-up" role="tabpanel" aria-labelledby="pills-tune-up-tab">
+                <div class="container">
+                    <div class="row align-items-md-start justify-content-md-between">
+                        <div class="col-12 col-md-6 order-2 position-relative">
+                            <figure>
+                                <img src="assets/images/5.jpg" width="450" height="532" class="rounded-2" alt="Roof tune-up">
+                            </figure>
+                            <div class="image-shape-1 rotate-me" style="background-image: url(assets/images/shape-7.png);">
+                            </div>
+                        </div>
+                        <div class="col-12 order-1 col-md-6">
+                            <div class="content-box">
+                                <h3>Roof Tune-up</h3>
+                                <p class="montserrat text-light text-justify lh-sm fw-normal fs-6">
+                                    The majority of roof repair services simply deal with the visible parts of the roof. We go above and above at Services, performing a full evaluation of the decking beneath your shingles, as well as an attic ventilation and insulation assessment. Our goal
+                                    is to ensure that your roof is breathing properly and that conditioned air stays where it belongs
+                                </p>
+                                <p class="montserrat text-light lh-sm fw-normal fs-6">
+                                    Typically, a roof repair focuses on a specific issue that arises. Before they become costly problems, a Roof Tune-Up tackles several of the most frequent roofing difficulties.
+                                </p>
+                                <ul class="clearfix p-0">
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Resealing exposed nail heads
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Resealing plumbing vents
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Secure loose flashings
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Secure loose flashings (step/apron)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-repair" role="tabpanel" aria-labelledby="pills-repair-tab">
+                <div class="container">
+                    <div class="row align-items-md-start justify-content-md-between">
+                        <div class="col-12 col-md-6 order-2 position-relative">
+                            <div class="row align-items-start">
+                                <div class="col-12 col-md-6">
+                                    <figure>
+                                        <img src="assets/images/44.jpg" class="rounded-2 w-100 h-100" alt="Roof tune-up">
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <figure>
+                                        <img src="assets/images/service-5.jpg" height="219" class="rounded-2 w-100" alt="Roof tune-up">
+                                    </figure>
+                                    <figure class="ms-2 ms-md-0 mt-md-2">
+                                        <img src="assets/images/service-6.jpg" height="219" class="rounded-2 w-100" alt="Roof tune-up">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="image-shape-1 rotate-me" style="background-image: url(assets/images/shape-7.png);">
+                            </div>
+                        </div>
+                        <div class="col-12 order-1 col-md-6">
+                            <div class="content-box">
+                                <h3>Roof Repair</h3>
+                                <p class="montserrat text-light text-justify lh-sm fw-normal fs-6">
+                                    Not every roofing problem necessitates a whole roof replacement. Individual shingles damaged by high winds or fallen branches are frequently requested by Maryland residents. We also inspect the wood decking beneath your shingles to ensure that water intrusion
+                                    hasn't caused any extra damage.
+                                </p>
+                                <h3>Work Process</h3>
+                                <p class="montserrat text-light text-justify lh-sm fw-normal fs-6">
+                                    If this type of damage is discovered during an inspection, our experienced craftsmen will cut off the decaying section and replace it with fresh material to extend the life of the structure.
+                                </p>
+                                <p class="montserrat text-light text-justify lh-sm fw-normal fs-6">
+                                    We understand that your home is one of your most valuable possessions. As a result, only the most skilled hands are permitted to operate on it. We are a roof repair company with a proven track record of excellent craftsmanship and customer service.
+                                </p>
+                                <ul class="clearfix p-0">
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Resealing exposed nail heads
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Resealing plumbing vents
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Secure loose flashings
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Secure loose flashings (step/apron)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-replacement" role="tabpanel" aria-labelledby="pills-replacement-tab">
+                <div class="container">
+                    <div class="row align-items-md-start justify-content-md-between">
+                        <div class="col-12 col-md-6 position-relative">
+                            <figure class="d-flex justify-content-start">
+                                <img src="assets/images/error-page-area-bg.jpg" width="450" height="250" class="rounded-2" alt="Roof Layers">
+                            </figure>
+                            <figure class="position-absolute img-layer-2">
+                                <img src="assets/images/dia.jpg" width="450" height="250" class="rounded-2" alt="Roof Drawing">
+                            </figure>
+                            <div class="image-shape-1 rotate-me" style="background-image: url(assets/images/shape-7.png);">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="content-box">
+                                <h3>Roof Replacement</h3>
+                                <p class="montserrat text-light text-justify lh-sm fw-normal fs-6">
+                                    A roof substitution may be a critical venture, but we all know that nothing ensures your domestic from the components very like a roof. The normal life expectancy of a shingle roof in Georgia is 18-25 a long time. Once you choose to replace your roof,
+                                    one of the foremost imperative steps is to discover the correct temporary worker.
+                                    <br> In any case, it’s too vital to recognize that roof substitutions are sold as total frameworks. Your roof is more than fair the best layer. In expansion to the shingles, here are the
+                                </p>
+                                <h4 class="montserrat text-light">Key Components of a Roof Replacement</h4>
+                                <ul class="menu-list clearfix p-0">
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> The Deck
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Underlayment
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Flashing
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Ventilation
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Drip Edge
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Starter Strips
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Fascia
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Soffit
+                                    </li>
+                                    <li>
+                                        <i class="bi bi-check-circle text-danger me-2"></i> Ice and Water Shield
+                                    </li>
+                                </ul>
+
+                                <button class="btn btn-danger btn-lg px-4 py-2 fw-bold rounded-pill my-3">
+                                    Contact Us
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-pattern diag-1 position-absolute"></div>
+        <div class="bg-pattern diag-2 position-absolute"></div>
+    </section>
+    <!-- /.Our Services -->
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
