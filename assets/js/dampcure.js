@@ -25,6 +25,8 @@ $(function() {
         nav: false,
         dots: true,
         autoplay: true,
+        autoplay: true,
+        smartSpeed: 450,
         responsive: {
             0: {
                 items: 1

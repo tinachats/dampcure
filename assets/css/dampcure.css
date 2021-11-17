@@ -588,6 +588,31 @@ span,
     margin-right: -5px;
 }
 
+.owl-carousel#testimonials-carousel .owl-dots.disabled {
+    display: inline-flex !important;
+    align-items: center;
+}
+
+.owl-dots .owl-dot.active {
+    width: 30px;
+    border-radius: 10px;
+    background: var(--bs-danger);
+}
+
+.owl-dots .owl-dot {
+    position: relative;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #d9d9d9;
+    border: 0px solid transparent;
+    margin: 0px 5px;
+    padding: 0px;
+    border-radius: 50%;
+    transition: all 100ms linear;
+    transition-delay: 0.1s;
+}
+
 
 /* /.Element Styling */
 
