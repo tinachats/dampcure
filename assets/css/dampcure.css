@@ -74,6 +74,20 @@ span,
     left: 0px;
 }
 
+.logo-box>a {
+    position: relative;
+}
+
+.logo-box .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 161px;
+    height: 57px;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
 .social-apps>li>a {
     color: rgba(255, 255, 255, 0.50);
     margin-left: .5rem;
@@ -124,7 +138,7 @@ span,
     display: block;
     padding: 10px;
     color: #172746;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
     font-weight: 600;
     text-transform: capitalize;
@@ -132,6 +146,10 @@ span,
     font-family: var(--thm-font-2);
     opacity: 1;
     z-index: 1;
+}
+
+.main-menu>li>a>i {
+    font-size: 16px;
 }
 
 .main-menu>li:active .dropdown-menu,
@@ -506,6 +524,9 @@ span,
     top: 0px;
     visibility: visible;
     opacity: 1;
+}
+
+.overlay-card:hover .overlay-text {
     background: #ed202b!important;
     background-color: #ed202b!important;
 }
@@ -588,9 +609,23 @@ span,
     margin-right: -5px;
 }
 
+.owl-dots .owl-dot {
+    margin-right: 2rem !important;
+}
+
+.owl-carousel#testimonials-carousel .owl-dots>button,
 .owl-carousel#testimonials-carousel .owl-dots.disabled {
-    display: inline-flex !important;
+    display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.owl-carousel#testimonials-carousel .owl-dots .owl-dot.active>button {
+    margin-right: 1rem !important;
+}
+
+.owl-dots .owl-dot.disabled {
+    background-color: #d9d9d9;
 }
 
 .owl-dots .owl-dot.active {
@@ -611,6 +646,218 @@ span,
     border-radius: 50%;
     transition: all 100ms linear;
     transition-delay: 0.1s;
+}
+
+.owl-carousel#designs-carousel .item {
+    position: relative;
+    z-index: 1;
+}
+
+.owl-carousel#designs-carousel .item::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    visibility: visible;
+    z-index: 1;
+}
+
+.owl-carousel#designs-carousel .item .icon-rounded-circle,
+.owl-carousel#designs-carousel .item .d-block {
+    position: absolute;
+    z-index: 5;
+    visibility: visible;
+    opacity: 1;
+}
+
+.owl-carousel#designs-carousel .item .d-block {
+    bottom: 5%;
+    left: 5%;
+}
+
+.owl-carousel#designs-carousel .item .icon-rounded-circle {
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.owl-carousel#designs-carousel .item .icon-rounded-circle>i {
+    color: var(--bs-danger);
+}
+
+.owl-carousel#designs-carousel .item .icon-rounded-circle:hover {
+    background-color: var(--bs-danger);
+    transition: all .5s ease-in-out;
+}
+
+.owl-carousel#designs-carousel .item .icon-rounded-circle:hover .owl-carousel#designs-carousel .item .icon-rounded-circle>i,
+.owl-carousel#designs-carousel .item a,
+.owl-carousel#designs-carousel .item p {
+    color: #fff;
+}
+
+.owl-carousel#designs-carousel .item a:hover {
+    color: var(--bs-danger);
+}
+
+.overlay-item:hover .icon-rounded-circle {
+    visibility: visible;
+    opacity: 1;
+}
+
+figure {
+    max-width: 100%;
+    display: block;
+}
+
+.team-block {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 10px 50px 0px rgb(26 46 85 / 10%);
+}
+
+.team-block .inner-box .image-box {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: #f6f3ec;
+    transition: all 500ms ease;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.team-block .inner-box:hover .image-box {
+    background: #1f2021;
+}
+
+.team-block .inner-box,
+.cursor-cell {
+    cursor: cell;
+}
+
+.team-block .inner-box:hover .image-box img {
+    transform: scale(1.05);
+    opacity: 0.5;
+}
+
+.team-block .inner-box .image-box img {
+    transition: all 500ms ease;
+}
+
+.team-block .lower-content {
+    position: relative;
+    display: block;
+    padding: 15px 30px;
+    margin: 0;
+    background: #ed202b;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.team-block .lower-content .shape {
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 34px;
+    width: 100%;
+    left: 0;
+    top: -35px;
+}
+
+.team-block .lower-content h4 {
+    display: inline-block;
+    color: #fff;
+    transition: all 500ms ease;
+}
+
+.designation {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: #fff;
+}
+
+.team-block .share-box {
+    position: absolute;
+    top: 20%;
+    right: 20px;
+    z-index: 100;
+}
+
+.team-block .share-box:before {
+    position: absolute;
+    content: '';
+    background: transparent;
+    width: 100%;
+    height: 15px;
+    left: 0px;
+    top: -15px;
+}
+
+.team-block .share-box:hover .share-icon {
+    color: #ed202b
+}
+
+.team-block .share-box .share-icon {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #222;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+
+.team-block .share-box:hover .share-links {
+    bottom: 25px;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.team-block .share-box .share-links {
+    position: absolute;
+    right: 0px;
+    bottom: 45px;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    opacity: 0;
+    transition: all 500ms ease;
+}
+
+.team-block .share-box .share-links li {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.team-block .share-box .share-links li a {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #222;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+
+.team-block .share-box .share-links li a:hover {
+    color: #ed202b
 }
 
 
@@ -697,6 +944,18 @@ span,
 
 .rounded-circle {
     border-radius: 50% !important;
+}
+
+.rounded-circle-sm {
+    height: 50px !important;
+    width: 50px !important;
+}
+
+.rounded-circle-sm>i {
+    clear: both;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 
