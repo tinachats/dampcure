@@ -714,6 +714,25 @@ figure {
     display: block;
 }
 
+.section-block {
+    position: relative;
+    height: auto;
+}
+
+.section-block .pattern-1,
+.section-block .pattern-2 {
+    position: absolute;
+}
+
+.section-block .pattern-1 {
+    height: auto;
+    width: 100%
+}
+
+.bg-light-grey {
+    background-color: #f6f3ec !important;
+}
+
 .team-block {
     margin: 0;
     padding: 0;
@@ -756,7 +775,7 @@ figure {
 .team-block .lower-content {
     position: relative;
     display: block;
-    padding: 15px 30px;
+    padding: 15px 20px;
     margin: 0;
     background: #ed202b;
     border-bottom-left-radius: 15px;
@@ -858,6 +877,29 @@ figure {
 
 .team-block .share-box .share-links li a:hover {
     color: #ed202b
+}
+
+.accordion-btn-text.active {
+    color: var(--bs-danger);
+}
+
+.faq-style1-area .image-box {
+    position: relative;
+}
+
+.faq-style1-area .image-box img {
+    border-radius: 20px;
+}
+
+.bg-layer {
+    position: absolute;
+    top: -15%;
+    right: -15%;
+    background: var(--bs-danger);
+    height: 270px;
+    width: 270px;
+    border-radius: 15px;
+    z-index: 0;
 }
 
 

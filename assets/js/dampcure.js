@@ -60,4 +60,9 @@ $(function() {
             }
         }
     });
+
+    $('.accordion-button').on('click', function() {
+        $('.accordion-button>.accordion-btn-text').removeClass('active');
+        $(this).children(':first').addClass('active');
+    });
 });
