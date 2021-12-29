@@ -902,6 +902,235 @@ figure {
     z-index: 0;
 }
 
+#how-we-work {
+    background: url('../images/shape-19.png') center center/cover no-repeat;
+}
+
+#how-we-work .process-block .inner-box {
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.process-block .inner-box .icon-box {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: 2px dashed rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    margin-bottom: 25px;
+    padding: 8px;
+}
+
+.process-block .inner-box .icon-box .icon {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    background: #ed202b;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 500ms ease;
+    background: #ed202b!important;
+    background-color: #ed202b!important;
+}
+
+.process-block .inner-box .icon-box .icon:hover {
+    background: #fff;
+    color: #ed202b;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+.process-block .inner-box .icon-box .icon:before {
+    position: absolute;
+    content: '';
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    transform: scale(0, 0);
+    z-index: -1;
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+
+.process-block .inner-box .icon-box span {
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+.process-block .inner-box h3 {
+    position: relative;
+    display: block;
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.process-block .inner-box p {
+    color: #b5b5b5;
+    line-height: 30px;
+    margin-bottom: 0px;
+}
+
+.single-blog-style1 {
+    background: transparent;
+}
+
+.single-blog-style1 .img-holder {
+    position: relative;
+    display: block;
+}
+
+.single-blog-style1 .img-holder .inner {
+    background: #000;
+}
+
+.single-blog-style1 .img-holder .inner {
+    position: relative;
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.single-blog-style1 .img-holder img {
+    width: 100%;
+}
+
+.single-blog-style1 .img-holder .inner .date-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 119px;
+    height: 113px;
+    z-index: 2;
+}
+
+.single-blog-style1 .img-holder .inner .date-box .shape-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.single-blog-style1 .img-holder .inner .date-box h5 {
+    margin: 0;
+    position: relative;
+    top: 24px;
+    right: -22px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    transform: rotate( 45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-blog-style1 .img-holder .inner .date-box h5 a {
+    color: #ffffff;
+}
+
+.single-blog-style1 .text-holder {
+    position: relative;
+    display: block;
+    padding: 23px 0px 0px;
+}
+
+.single-blog-style1 .text-holder .meta-info {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.single-blog-style1 .text-holder .meta-info li {
+    position: relative;
+    display: block;
+    float: left;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    padding-right: 16px;
+    margin-right: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.single-blog-style1 .text-holder .meta-info li a {
+    text-transform: capitalize;
+}
+
+.single-blog-style1 .text-holder .meta-info li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.single-blog-style1 .text-holder .blog-title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.single-blog-style1 .text-holder .blog-title a {
+    color: #252628;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.elementor .elementor-widget-container {
+    -webkit-transition: background .3s, border .3s, -webkit-border-radius .3s, -webkit-box-shadow .3s;
+    transition: background .3s, border .3s, -webkit-border-radius .3s, -webkit-box-shadow .3s;
+    -o-transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+    transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+    transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, -webkit-border-radius .3s, -webkit-box-shadow .3s;
+}
+
+.elementor img {
+    max-width: 100%;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-top: -3rem;
+}
+
+.contact-style1-area {
+    position: relative;
+    display: block;
+    z-index: 2;
+}
+
 
 /* /.Element Styling */
 
