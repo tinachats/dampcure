@@ -14,27 +14,22 @@
 }
 
 
-/* Element Styling */
+/* Element Styling .nav-toggler*/
 
 html {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #545454;
-    overflow-x: hidden;
 }
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
+    overflow-x: hidden;
     width: 100%;
     min-height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -99,6 +94,7 @@ span,
 
 .main-menu {
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -309,21 +305,18 @@ span,
     position: relative;
 }
 
-.image-box {
+.image-box,
+.image-box .image {
     position: relative;
     display: block;
-    padding-right: 230px;
-    margin-right: 40px;
 }
 
 .image-box .image {
     border-radius: 15px;
-    position: relative;
 }
 
 .image-box .image-shape-1 {
     position: absolute;
-    left: -70px;
     top: -80px;
     width: 243px;
     height: 243px;
@@ -332,7 +325,6 @@ span,
 
 .image-box .image-shape-2 {
     position: absolute;
-    right: -10px;
     bottom: 210px;
     width: 143px;
     height: 143px;
@@ -342,18 +334,16 @@ span,
 .image-box .image-2 {
     position: absolute;
     top: 0px;
-    right: -30px;
 }
 
 .image-box .image-3 {
     position: absolute;
-    right: 60px;
     bottom: 0px;
 }
 
 .icon-rounded-circle {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     background-color: #fde8e9;
 }
@@ -1116,19 +1106,30 @@ figure {
 }
 
 .elementor img {
+    position: absolute;
+    left: 0;
+    width: 600px;
     max-width: 100%;
     border: none;
     -webkit-border-radius: 0;
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    margin-top: -3rem;
+    margin-top: -3.3rem;
+    z-index: 0
 }
 
-.contact-style1-area {
-    position: relative;
-    display: block;
-    z-index: 2;
+.elementor .col-12 {
+    z-index: 10;
+}
+
+#contact-info {
+    background-color: #1c1c1e;
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: #000;
 }
 
 
@@ -1242,4 +1243,119 @@ figure {
 
 .up-xl-2 {
     margin-top: -7rem;
+}
+
+@media(max-width:576px) {
+    .main-menu>li* {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .toggler-link {
+        margin-top: -16px;
+    }
+    .mobile-nav-toggler {
+        display: block;
+        padding: 12px 0 12px;
+        cursor: pointer;
+    }
+    .mobile-nav-toggler .inner {
+        position: relative;
+        display: block;
+        padding: 3px 5px;
+        background: var(--bs-danger);
+    }
+    .mobile-nav-toggler .icon-bar {
+        position: relative;
+        display: block;
+        background: #ffffff;
+        height: 2px;
+        width: 30px;
+        margin: 7px 5px;
+    }
+    #main-carousel {
+        margin: -1rem 0 1rem 0;
+        width: 100%;
+    }
+    #main-carousel .slider-content {
+        display: block;
+        width: 100% !important;
+        padding: 1rem .5rem;
+        top: 20%;
+        transform: translate(-20%, -20%);
+    }
+    #main-carousel .slider-content>.upper-title {
+        width: 100%;
+        font-size: 90% !important;
+    }
+    #main-carousel .hero-image {
+        object-fit: cover !important;
+        height: 90vh;
+    }
+    .services-container .col-12:not(:last-child) {
+        margin-bottom: 10rem;
+    }
+    .about-home-four.one .image-box .image {
+        position: relative !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+    .about-home-four.one .image-box .image>img {
+        width: 100%;
+    }
+    .sec-title {
+        font-size: 36px !important;
+        line-height: 1.2em;
+    }
+    #presentation-pills-tab>.nav-item {
+        width: 100%;
+        margin-top: 1.3rem;
+    }
+    .first-img,
+    .img-layer-2 {
+        max-width: 100%;
+    }
+    .first-img>img,
+    .img-layer-2>img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(min-width:768px) {
+    .position-md-absolute {
+        position: absolute !important;
+    }
+    .image-box {
+        padding-right: 230px;
+        margin-right: 40px;
+    }
+    .image-box .image-shape-2 {
+        position: absolute;
+        right: -10px;
+        bottom: 210px;
+        width: 143px;
+        height: 143px;
+        background-repeat: no-repeat;
+    }
+    .image-box .image-2 {
+        position: absolute;
+        top: 0px;
+        right: -30px;
+        width: 200px;
+        height: 270px;
+    }
+    .image-box .image-3 {
+        position: absolute;
+        right: 60px;
+        bottom: 0px;
+    }
+    .first-img,
+    .img-layer-2 {
+        width: 450px;
+        height: 250px;
+    }
 }

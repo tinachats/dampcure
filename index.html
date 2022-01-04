@@ -29,7 +29,7 @@
 
 <body class="position-relative">
     <!-- Logo Box -->
-    <div class="logo-box">
+    <div class="d-none d-md-block logo-box">
         <a href="#" class="position-relative">
             <img src="assets/images/philaxy-investments-logo.png" class="logo" width="161" height="57" alt="Logo">
         </a>
@@ -37,7 +37,7 @@
     <!-- /.Logo Box -->
 
     <!-- Top Section -->
-    <nav class="bg-dark text-light w-100 py-2">
+    <nav class="bg-dark text-light d-none d-md-block w-100 py-2">
         <div class="container text-center">
             <div class="d-flex align-items-center justify-content-xl-end">
                 <!-- Item -->
@@ -97,14 +97,23 @@
 
     <!-- Navbar Section -->
     <nav class="sticky-top bg-white shadow-sm">
-        <div class="container mb-2 pt-2">
+        <div class="container mb-md-2 pt-md-2">
             <ul class="main-menu list-inline justify-content-xl-end">
                 <li class="list-inline-item">
+                    <div class="d-md-none mobile-nav-toggler">
+                        <div class="inner">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-inline-item d-none d-md-inline-block">
                     <a href="#">
                         Home
                     </a>
                 </li>
-                <li class="list-inline-item dropdown">
+                <li class="list-inline-item d-none d-md-inline-block dropdown">
                     <a href="#" role="button" id="company-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         Company 
                         <svg xmlns='http://www.w3.org/2000/svg' width="15" height="12" viewBox='0 0 16 16'>
@@ -118,7 +127,7 @@
                         <li><a class="dropdown-item montserrat" href="#">Testimonials</a></li>
                     </ul>
                 </li>
-                <li class="list-inline-item dropdown">
+                <li class="list-inline-item d-none d-md-inline-block dropdown">
                     <a href="#" role="button" id="services-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         Services 
                         <svg xmlns='http://www.w3.org/2000/svg' width="15" height="12" viewBox='0 0 16 16'>
@@ -135,7 +144,7 @@
                         <li><a class="dropdown-item montserrat" href="#">Market Research</a></li>
                     </ul>
                 </li>
-                <li class="list-inline-item dropdown">
+                <li class="list-inline-item d-none d-md-inline-block dropdown">
                     <a href="#" role="button" id="projects-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         Project 
                         <svg xmlns='http://www.w3.org/2000/svg' width="15" height="12" viewBox='0 0 16 16'>
@@ -152,7 +161,7 @@
                         <li><a class="dropdown-item montserrat" href="#">Roof Installation</a></li>
                     </ul>
                 </li>
-                <li class="list-inline-item dropdown">
+                <li class="list-inline-item d-none d-md-inline-block dropdown">
                     <a href="#" role="button" id="company-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         Shop 
                         <svg xmlns='http://www.w3.org/2000/svg' width="15" height="12" viewBox='0 0 16 16'>
@@ -164,12 +173,12 @@
                         <li><a class="dropdown-item montserrat" href="#">Cart</a></li>
                     </ul>
                 </li>
-                <li class="list-inline-item">
+                <li class="list-inline-item d-none d-md-inline-block">
                     <a href="#">
                         Blog
                     </a>
                 </li>
-                <li class="list-inline-item">
+                <li class="list-inline-item d-none d-md-inline-block">
                     <a href="#">
                         Contact
                     </a>
@@ -185,7 +194,7 @@
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#">
+                    <a href="#" class="toggler-link">
                         <div class="nav-btn nav-toggler navSidebar-button clearfix">
                             <div class="bar-box">
                                 <span class="bar"></span>
@@ -195,7 +204,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="list-inline-item">
+                <li class="list-inline-item d-none d-md-inline-block">
                     <a href="#contact-us" role="button" class="btn btn-danger btn-sm rounded-pill text-light mt-2 px-3 py-1">
                         <span class="fs-6">Contact Us</span>
                     </a>
@@ -219,11 +228,11 @@
                 <p class="text-wrap animate__animated animate__slideInDown fs-5">
                     We are professionals in the roofing and fixing business maintain the highest standards of business integrity.
                 </p>
-                <div class="d-flex align-items-center animate__animated animate__slideInUp mt-2">
+                <div class="d-flex align-items-center justify-content-between animate__animated animate__slideInUp mt-3">
                     <a href="#" role="button" class="btn btn-lg btn-danger rounded-pill fw-bold fs-6 px-4 py-2">
                         Our Services
                     </a>
-                    <a href="#" role="button" class="btn btn-lg btn-light rounded-pill fw-bold fs-6 px-4 py-2 ms-3">
+                    <a href="#" role="button" class="btn btn-lg btn-light rounded-pill fw-bold fs-6 px-4 py-2 ms-md-3 mt-2 mt-md-0">
                         About More
                     </a>
                 </div>
@@ -243,11 +252,11 @@
                 <p class="text-wrap animate__animated animate__slideInDown fs-5">
                     We provide a variety of Roofing and maintenance services for <br>all type of House makes Happy.
                 </p>
-                <div class="d-flex align-items-center animate__animated animate__slideInUp mt-2">
+                <div class="d-flex align-items-center justify-content-between animate__animated animate__slideInUp mt-3">
                     <a href="#" role="button" class="btn btn-lg btn-danger rounded-pill fw-bold fs-6 px-4 py-2">
                         Our Services
                     </a>
-                    <a href="#" role="button" class="btn btn-lg btn-light rounded-pill fw-bold fs-6 px-4 py-2 ms-3">
+                    <a href="#" role="button" class="btn btn-lg btn-light rounded-pill fw-bold fs-6 px-4 py-2 ms-md-3 mt-2 mt-md-0">
                         About More
                     </a>
                 </div>
@@ -267,11 +276,11 @@
                 <p class="text-wrap animate__animated animate__slideInDown fs-5">
                     Download Our app and get our services<br> We are connected and provide Services
                 </p>
-                <div class="d-flex align-items-center animate__animated animate__slideInUp mt-2">
+                <div class="d-flex align-items-center justify-content-between animate__animated animate__slideInUp mt-3">
                     <a href="#" role="button" class="btn btn-lg btn-danger rounded-pill fw-bold fs-6 px-4 py-2">
                         Our Services
                     </a>
-                    <a href="#" role="button" class="btn btn-lg btn-light rounded-pill fw-bold fs-6 px-4 py-2 ms-3">
+                    <a href="#" role="button" class="btn btn-lg btn-light rounded-pill fw-bold fs-6 px-4 py-2 ms-md-3 mt-2 mt-md-0">
                         About More
                     </a>
                 </div>
@@ -283,48 +292,54 @@
     <!-- /.Hero Slider -->
 
     <!-- Services -->
-    <div class="container mb-5 mt-3">
-        <div class="d-flex align-items-center justify-content-center">
-            <div class="feature-block position-relative">
-                <div class="house-roof position-absolute"></div>
-                <div class="inner-box text-center">
-                    <div class="icon-box text-center">
-                        <i class="bi bi-hammer fs-3"></i>
-                    </div>
-                    <h4 class="fw-bold fs-6 montserrat">
-                        <a href="#" class="feature-title">Quality Materials</a>
-                    </h4>
-                    <small class="feature-text fw-light fs-6">
+    <div class="services-container container mb-5 mt-3">
+        <div class="row align-items-center justify-content-center g-3">
+            <div class="col-12 col-md-4">
+                <div class="feature-block position-relative">
+                    <div class="house-roof position-absolute"></div>
+                    <div class="inner-box text-center">
+                        <div class="icon-box text-center">
+                            <i class="bi bi-hammer fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold fs-6 montserrat">
+                            <a href="#" class="feature-title">Quality Materials</a>
+                        </h4>
+                        <small class="feature-text fw-light fs-6">
                         We have all the Quality Roofing Products needed
                     </small>
+                    </div>
                 </div>
             </div>
-            <div class="feature-block position-relative mx-5">
-                <div class="house-roof position-absolute"></div>
-                <div class="inner-box text-center">
-                    <div class="icon-box text-center">
-                        <i class="bi bi-hammer fs-3"></i>
-                    </div>
-                    <h4 class="fw-bold fs-6 montserrat">
-                        <a href="#" class="feature-title">Expert Engineer</a>
-                    </h4>
-                    <small class="feature-text fw-light fs-6">
+            <div class="col-12 col-md-4">
+                <div class="feature-block position-relative">
+                    <div class="house-roof position-absolute"></div>
+                    <div class="inner-box text-center">
+                        <div class="icon-box text-center">
+                            <i class="bi bi-hammer fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold fs-6 montserrat">
+                            <a href="#" class="feature-title">Expert Engineer</a>
+                        </h4>
+                        <small class="feature-text fw-light fs-6">
                         Our Roofing Team Members are Well Educated and Professional
                     </small>
+                    </div>
                 </div>
             </div>
-            <div class="feature-block position-relative">
-                <div class="house-roof position-absolute"></div>
-                <div class="inner-box text-center">
-                    <div class="icon-box text-center">
-                        <i class="bi bi-hammer fs-3"></i>
-                    </div>
-                    <h4 class="fw-bold fs-6 montserrat">
-                        <a href="#" class="feature-title">Quality Maintenance</a>
-                    </h4>
-                    <small class="feature-text fw-light fs-6">
+            <div class="col-12 col-md-4">
+                <div class="feature-block position-relative">
+                    <div class="house-roof position-absolute"></div>
+                    <div class="inner-box text-center">
+                        <div class="icon-box text-center">
+                            <i class="bi bi-hammer fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold fs-6 montserrat">
+                            <a href="#" class="feature-title">Quality Maintenance</a>
+                        </h4>
+                        <small class="feature-text fw-light fs-6">
                         Ensure the Quality of work is our main goal to follow.
                     </small>
+                    </div>
                 </div>
             </div>
         </div>
@@ -343,20 +358,18 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row align-items-md-start clearfix">
-                    <div class="col-12 col-md-6">
+                <div class="row align-items-md-start g-3">
+                    <div class="col-12 col-md-6 mb-3">
                         <div class="image-box">
-                            <div class="image-shape-1 rotate-me" style="background-image: url(assets/images/shape-3.png);">
-                            </div>
-                            <div class="image-shape-2 rotate-me" style="background-image: url(assets/images/shape-4.png);">
-                            </div>
+                            <div class="image-shape-1 rotate-me" style="background-image: url(assets/images/shape-3.png);"></div>
+                            <div class="image-shape-2 rotate-me" style="background-image: url(assets/images/shape-4.png);"></div>
 
                             <figure class="image image-1 paroller" style="transform: translateY(-20px); transition: transform 0.6s cubic-bezier(0, 0, 0, 1) 0s; will-change: transform;">
                                 <img src="assets/images/about-1.jpg" width="295" height="393" alt="Roof construction">
                             </figure>
 
                             <figure class="image image-2 paroller-2" style="transform: translateX(3px); transition: transform 0s linear 0s; will-change: transform;">
-                                <img src="assets/images/about-3.jpg" width="200" height="270" alt="">
+                                <img src="assets/images/about-3.jpg" alt="Image 2">
                             </figure>
 
                             <figure class="image image-3">
@@ -373,14 +386,13 @@
                             We are professionals in the Roofing and Fixing business, this is why we always stay up to date on the latest technologies and equipment. Furthermore, we maintain the highest standards of business integrity on Global Basis by following environmental safety
                             rules. We are passionate about our Works!
                         </p>
-                        <div class="row align-items-start my-3">
-                            <div class="col-2 d-flex justify-content-end">
+                        <div class="d-flex align-items-start my-3">
+                            <div class="d-block">
                                 <div class="icon-rounded-circle d-grid">
                                     <i class="bi bi-check2 text-danger fs-2 m-auto"></i>
                                 </div>
                             </div>
-
-                            <div class="col-10">
+                            <div class="d-block ms-2">
                                 <h4 class="bullet-heading">
                                     Mission Statement
                                 </h4>
@@ -389,14 +401,13 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="row align-items-start">
-                            <div class="col-2 d-flex justify-content-end">
+                        <div class="d-flex align-items-start">
+                            <div class="d-block">
                                 <div class="icon-rounded-circle d-grid" style="background-color:#fbf4d8;;">
                                     <i class="bi bi-check2 fs-2 m-auto" style="color:#e7bd1a;"></i>
                                 </div>
                             </div>
-
-                            <div class="col-10">
+                            <div class="d-block ms-2">
                                 <h4 class="bullet-heading">
                                     What is Our Core Values
                                 </h4>
@@ -405,9 +416,8 @@
                                 </p>
                             </div>
                         </div>
-
                         <div class="row align-items-md-center justify-content-md-center my-4">
-                            <div class="col-12 col-md-5">
+                            <div class="col-12 col-md-5 mb-2">
                                 <div class="single-counting-box border border-danger rounded-2 p-3">
                                     <div class="d-flex align-items-center justify-content-center">
                                         <h6 class="fs-2 text-gold fw-bold my-0">
@@ -419,7 +429,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-5">
+                            <div class="col-12 col-md-5 mb-2">
                                 <div class="single-counting-box border border-danger rounded-2 p-3">
                                     <div class="d-flex align-items-center justify-content-center">
                                         <h6 class="fs-2 text-gold fw-bold my-0">
@@ -435,7 +445,8 @@
                     </div>
                 </div>
             </div>
-        </section>
+    </div>
+    </section>
     </div>
     <!-- /.About Us -->
 
@@ -448,46 +459,50 @@
             </div>
         </div>
 
-        <div class="container pt-5 pb-2">
+        <div class="container pt-2 pt-md-5 pb-2">
             <div class="d-block text-center">
                 <p class="sub-title text-danger">quality services</p>
-                <h2 class="sec-title text-light">We’re Providing Quality <br>Roofing Services</h2>
+                <h2 class="sec-title text-light">
+                    We’re Providing Quality <br>Roofing Services
+                </h2>
             </div>
         </div>
 
-        <ul class="container nav nav-pills nav-fill my-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-layer-tab" data-bs-toggle="pill" data-bs-target="#pills-layer" type="button" role="tab" aria-controls="pills-layer" aria-selected="true">
+        <div class="container">
+            <ul class="nav nav-pills nav-fill my-3" id="presentation-pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-layer-tab" data-bs-toggle="pill" data-bs-target="#pills-layer" type="button" role="tab" aria-controls="pills-layer" aria-selected="true">
                     <h4 class="my-0">Roof Layer</h4>
                 </button>
-            </li>
-            <li class="nav-item ms-5" role="presentation">
-                <button class="nav-link" id="pills-tune-up-tab" data-bs-toggle="pill" data-bs-target="#pills-tune-up" type="button" role="tab" aria-controls="pills-tune-up" aria-selected="false">
+                </li>
+                <li class="nav-item ms-md-5" role="presentation">
+                    <button class="nav-link" id="pills-tune-up-tab" data-bs-toggle="pill" data-bs-target="#pills-tune-up" type="button" role="tab" aria-controls="pills-tune-up" aria-selected="false">
                     <h4 class="my-0">Roof Tune-up</h4>
                 </button>
-            </li>
-            <li class="nav-item ms-md-5" role="presentation">
-                <button class="nav-link" id="pills-repair-tab" data-bs-toggle="pill" data-bs-target="#pills-repair" type="button" role="tab" aria-controls="pills-repair" aria-selected="false">
+                </li>
+                <li class="nav-item ms-md-5" role="presentation">
+                    <button class="nav-link" id="pills-repair-tab" data-bs-toggle="pill" data-bs-target="#pills-repair" type="button" role="tab" aria-controls="pills-repair" aria-selected="false">
                     <h4 class="my-0">Roof Repair</h4>
                 </button>
-            </li>
-            <li class="nav-item ms-5" role="presentation">
-                <button class="nav-link" id="pills-replacement-tab" data-bs-toggle="pill" data-bs-target="#pills-replacement" type="button" role="tab" aria-controls="pills-replacement" aria-selected="false">
+                </li>
+                <li class="nav-item ms-md-5" role="presentation">
+                    <button class="nav-link" id="pills-replacement-tab" data-bs-toggle="pill" data-bs-target="#pills-replacement" type="button" role="tab" aria-controls="pills-replacement" aria-selected="false">
                     <h4 class="my-0">Roof Replacement</h4>
                 </button>
-            </li>
-        </ul>
+                </li>
+            </ul>
+        </div>
 
         <div class="tab-content pt-3 mt-2" id="pills-repairContent">
             <div class="tab-pane fade show active" id="pills-layer" role="tabpanel" aria-labelledby="pills-layer-tab">
                 <div class="container">
                     <div class="row align-items-md-start justify-content-md-between">
                         <div class="col-12 col-md-6 position-relative">
-                            <figure class="d-flex justify-content-start">
-                                <img src="assets/images/dia.jpg" width="450" height="250" class="rounded-2" alt="Roof Layers">
+                            <figure class="d-md-flex justify-content-md-start first-img">
+                                <img src="assets/images/dia.jpg" class="rounded-2" alt="Roof Layers">
                             </figure>
-                            <figure class="position-absolute img-layer-2">
-                                <img src="assets/images/roofimd.png" width="450" height="250" class="rounded-2" alt="Roof Drawing">
+                            <figure class="position-md-absolute img-layer-2">
+                                <img src="assets/images/roofimd.png" class="rounded-2" alt="Roof Drawing">
                             </figure>
                             <div class="image-shape-1 rotate-me" style="background-image: url(assets/images/shape-7.png);">
                             </div>
@@ -636,10 +651,10 @@
                     <div class="row align-items-md-start justify-content-md-between">
                         <div class="col-12 col-md-6 position-relative">
                             <figure class="d-flex justify-content-start">
-                                <img src="assets/images/error-page-area-bg.jpg" width="450" height="250" class="rounded-2" alt="Roof Layers">
+                                <img src="assets/images/error-page-area-bg.jpg" class="rounded-2" alt="Roof Layers">
                             </figure>
                             <figure class="position-absolute img-layer-2">
-                                <img src="assets/images/dia.jpg" width="450" height="250" class="rounded-2" alt="Roof Drawing">
+                                <img src="assets/images/dia.jpg" class="rounded-2" alt="Roof Drawing">
                             </figure>
                             <div class="image-shape-1 rotate-me" style="background-image: url(assets/images/shape-7.png);">
                             </div>
@@ -1272,7 +1287,7 @@
                 <div class="col-12 col-md-4">
                     <div class="process-block wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
                         <div class="inner-box">
-                            <div class="arrow" style="background-image: url(http://z.commonsupport.com/dampcure/wp-content/uploads/2021/10/arrow-1.png);">
+                            <div class="arrow" style="background-image: url(assets/images/arrow-1.png);">
                             </div>
                             <div class="icon-box">
                                 <div class="icon">
@@ -1288,7 +1303,7 @@
                 <div class="col-12 col-md-4">
                     <div class="process-block wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
                         <div class="inner-box">
-                            <div class="arrow" style="background-image: url(http://z.commonsupport.com/dampcure/wp-content/uploads/2021/10/arrow-1.png);">
+                            <div class="arrow" style="background-image: url(assets/images/arrow-1.png);">
                             </div>
                             <div class="icon-box">
                                 <div class="icon">
@@ -1304,7 +1319,7 @@
                 <div class="col-12 col-md-4">
                     <div class="process-block wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
                         <div class="inner-box">
-                            <div class="arrow" style="background-image: url(http://z.commonsupport.com/dampcure/wp-content/uploads/2021/10/arrow-1.png);">
+                            <div class="arrow" style="background-image: url(assets/images/arrow-1.png);">
                             </div>
                             <div class="icon-box">
                                 <div class="icon">
@@ -1430,57 +1445,116 @@
     <!-- /.Blog Section -->
 
     <!-- Enquiries -->
-    <div class="elementor elementor-widget-container" style="background-image: url(assets/images/shape-20.png);position:relative;height:332px;">
-        <section class="contact-style1-area home-4 ">
-            <figure class="image-layer wow slideInLeft animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInLeft;">
-                <img src="assets/images/contact-1.png" alt="" height="380" width="660">
+    <div class="elementor elementor-widget-container" style="background-image: url(assets/images/shape-20.png);position:relative;height:320px;">
+        <section class="contact-style1-area home-4">
+            <figure class="position-relative image-layer wow slideInLeft animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInLeft;">
+                <img src="assets/images/contact-1.png" alt="House design" class="position-absolute">
             </figure>
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-8 offset-xl-4">
+                <div class="row justify-content-xl-end ps-xl-5">
+                    <div class="col-12 col-xl-8">
                         <div class="contact-form-box1">
-                            <div class="top-title">
-                                <h2>Need Mordern Roofing<br> Service Help?</h2>
+                            <div class="d-block text-start py-5">
+                                <h1 class="sec-title text-light">
+                                    Need Mordern Roofing<br> Service Help?
+                                </h1>
                             </div>
-                            <div role="form" class="wpcf7" id="wpcf7-f63-p1155-o1" lang="en-US" dir="ltr">
-                                <div class="screen-reader-response">
-                                    <p role="status" aria-live="polite" aria-atomic="true"></p>
-                                    <ul></ul>
+                            <form action="/enquiries" method="post" class="enquiry-form needs-validation row align-items-xl-center g-3" novalidate="novalidate">
+                                <div class="col-12 col-xl-4">
+                                    <input type="text" name="name" id="name" value="" class="form-control form-control-lg rounded-pill px-3" aria-required="true" aria-invalid="false" placeholder="Name">
                                 </div>
-                                <form action="/enquiries" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
-                                    <div style="display: none;">
-                                        <input type="hidden" name="_wpcf7" value="63">
-                                        <input type="hidden" name="_wpcf7_version" value="5.4.2">
-                                        <input type="hidden" name="_wpcf7_locale" value="en_US">
-                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f63-p1155-o1">
-                                        <input type="hidden" name="_wpcf7_container_post" value="1155">
-                                        <input type="hidden" name="_wpcf7_posted_data_hash" value="">
-                                    </div>
-                                    <div class="default-form1">
-                                        <div class="row">
-                                            <div class="col-xl-4">
-                                                <div class="input-box"> <span class="wpcf7-form-control-wrap text-428"><input type="text" name="text-428" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Name"></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-4">
-                                                <div class="input-box"><span class="wpcf7-form-control-wrap tel-313"><input type="tel" name="tel-313" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Phone"></span></div>
-                                            </div>
-                                            <div class="col-xl-4">
-                                                <div class="button-box"><button class="btn-one style2" type="submit" data-loading-text="Please wait..."><span class="txt">Submit Now</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wpcf7-response-output" aria-hidden="true"></div>
-                                </form>
-                            </div>
+                                <div class="col-12 col-xl-4">
+                                    <input type="tel" name="phone" id="phone" value="" class="form-control form-control-lg rounded-pill px-3" aria-required="true" aria-invalid="false" placeholder="Phone">
+                                </div>
+                                <div class="col-12 col-xl-4">
+                                    <button class="btn btn-light btn-lg rounded-pill px-5" type="submit" data-loading-text="Please wait...">
+                                        Submit Now
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
     </div>
     <!-- /.Enquiries -->
+
+    <!-- Contact Info -->
+    <section id="contact-info" class="py-5">
+        <div class="container">
+            <div class="row align-items-md-start g-3">
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h4 class="text-light d-flex align-items-center mb-3">
+                        Dampcure
+                    </h4>
+                    <ul class="m-0 p-0">
+                        <li>
+                            <p class="text-light">
+                                Nostrud exertation ullamco labor nisi aliquip commodo duis.
+                            </p>
+                        </li>
+                        <li class="mt-3">
+                            <h6 class="my-0">Opening Hours:</h6>
+                        </li>
+                        <li>
+                            <p class="text-light">Mon - Sat: 9AM - 6PM.</p>
+                            <p class="text-light">Sunday: Closed</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h4 class="text-light mb-3">Address</h4>
+                    <ul class="m-0 p-0">
+                        <li class="d-flex align-items-start mb-2">
+                            <i class="bi bi-geo-alt text-danger me-2"></i>
+                            <span class="text-light">
+                                Flat 20, Reynolds Neck,<br>FV77 8WS
+                            </span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="bi bi-telephone text-danger me-2"></i>
+                            <span class="text-light">
+                                Call Us: +263 4 2933292-4
+                            </span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <i class="bi bi-envelope text-danger me-2"></i>
+                            <span class="text-light">
+                                dampcurezw@gmail.com
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3">
+                    <h4 class="text-light mb-3">About Dampcure</h4>
+                    <ul class="m-0 p-0">
+                        <li class="mb-2">
+                            <span class="text-light">
+                                Our Team
+                            </span>
+                        </li>
+                        <li class="mb-2">
+                            <span class="text-light">
+                                Our Blog
+                            </span>
+                        </li>
+                        <li class="mb-2">
+                            <span class="text-light">
+                                Services
+                            </span>
+                        </li>
+                        <li class="mb-2">
+                            <span class="text-light">
+                                Contact Us
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.Contact Info -->
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
