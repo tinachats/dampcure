@@ -602,13 +602,6 @@ span,
     margin-right: 2rem !important;
 }
 
-.owl-carousel#testimonials-carousel .owl-dots>button,
-.owl-carousel#testimonials-carousel .owl-dots.disabled {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .owl-carousel#testimonials-carousel .owl-dots .owl-dot.active>button {
     margin-right: 1rem !important;
 }
@@ -617,7 +610,8 @@ span,
     background-color: #d9d9d9;
 }
 
-.owl-dots .owl-dot.active {
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
     width: 30px;
     border-radius: 10px;
     background: var(--bs-danger);
@@ -630,7 +624,7 @@ span,
     height: 8px;
     background: #d9d9d9;
     border: 0px solid transparent;
-    margin: 0px 5px;
+    margin: 0px;
     padding: 0px;
     border-radius: 50%;
     transition: all 100ms linear;
